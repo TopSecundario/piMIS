@@ -1,0 +1,30 @@
+@startuml
+
+enum SecurityCategory <<string>>
+{
+    指数基金
+    主动管理基金
+    股票
+    债券
+    ETF
+    REITs
+    货币市场基金
+    现金
+    活期存款
+    定期存款
+
+}
+
+class Security 
+{
+	code
+	name
+	description
+	securityCategory
+	assetCategory
+	pricingMoneyCategory
+	exchangeRegion
+	businessRegion
+}
+
+@enduml
